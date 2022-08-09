@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Alarm Clock</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body >
+        <div class = "title">
+            <h1>Alarm Clock <img src="clock.jpg"></h1>
+        </div>
+        <div class="main-container">
+            <div class="container"> 
+                <div class="current-time" id="current-time">
+                    __:__:__
+                </div>
+
+                <form class="form">
+                    <div>                    
+                        <select name="hour" id="hour" required>
+                            <option value="Hour">Hour</option>
+                        </select>
+                        <select name="minutes" id="minutes" required>
+                            <option value="Minutes">Minutes</option>
+                        </select>
+                        <select name="seconds" id="seconds" required>
+                            <option value="Seconds">Seconds</option>
+                        </select>
+                        <select name="ampm" id="ampm" required>
+                            <option value="AM">AM</option>
+                            <option value="PM">PM</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" id="submitButton"><h3>Set Alarm</h3></button>
+                </form>
+                <div><h3>Alarms</h3></div><hr>
+                <div class="alarm-container" id="alarm-container">
+                    
+
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

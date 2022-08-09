@@ -1,0 +1,104 @@
+body{
+    background-color: #12dd88;
+}
+.title{
+    text-align: center;
+    font-size: 200%;
+}
+.title img{
+    height: 100px;
+    width: 100px;
+}
+@keyframes rotating {
+	0% {
+		transform: rotate(-30deg);
+	}
+	50% {
+		transform: rotate(15deg);
+	}
+	100% {
+		transform: rotate(-30deg);
+	}
+}
+.title img{
+   
+    animation-name: rotating;
+	animation-timing-function: ease-in-out;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+.main-container{
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+   
+}
+.container{
+    padding: 2rem;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    min-width: 80vw;
+    min-height: 100vh;
+    background-color: hwb(66 10% 0% / 0.336);
+}
+
+#submitButton{
+    width: 20%;
+    cursor: pointer;
+    color: #0E141B;
+    border-color: black;
+}
+.current-time{
+    text-align: center;
+    font-size: 200%;
+}
+select{
+    border-radius: 20px;
+    width: 100px;
+    cursor: pointer;
+    color: #0E141B;
+    border-color: black;
+}
+
+.form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.alarm-container > div{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    padding: 5px;
+    transition: color 1s;
+}
+
+
+.alarm-container > div:hover{
+    box-shadow: 5px 5px 5px 5px #888888;
+    color:blue;
+}
+.delete-alarm{
+    width: 20%;
+    cursor: pointer;
+    color: #0E141B;
+    border-color: black;
+
+}
+
+@media only screen and (min-width: 600px) {
+    /* adding padding to container */
+    .main-container {
+      padding-block: 2rem;
+    }
+    .container{
+        justify-content: center;
+        border-radius: 50px;
+        width: 450px;
+        min-height: auto;
+
+    }
+  }
